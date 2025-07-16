@@ -1,0 +1,163 @@
+/* --- Global Styles --- */
+
+/* Sets the background color for the entire HTML document. */
+html{
+  background: #0d0d0d;
+}
+
+/* Sets the default font, background, and text color for the body of the page. */
+body{
+  font-family: 'Source Code Pro', monospace;
+  background: #0d0d0d;
+  color: #cccccc;
+}
+
+/* --- Typography & Text Styling --- */
+
+/* Default style for anchor (link) tags. */
+a{
+  color: #00aaff;
+}
+
+/* Utility class to color text yellow (currently set to a blue color). */
+.yellow{
+  color: #00aaff;
+}
+
+/* Style for correctly typed words. */
+.correct{
+  color: #00ffff;
+}
+
+/* Style for incorrectly typed words. */
+.wrong{
+  color: #ff4136;
+  text-decoration: underline;
+}
+
+/* Style for the current word being typed. */
+.current{
+  color: #ffffff;
+}
+
+/* Utility class to center align text. */
+.center{
+  text-align: center;
+}
+
+/* Styles the main heading of the page. */
+#heading{
+  align-self: left;
+  margin-top: 50px;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #00aaff;
+}
+
+/* Styles the display area for the text to be typed. */
+.text-display{
+  margin: 0 0 22px 0;
+  font-size: 21px;
+  text-align: left;
+  min-height: 200px; /* Ensures a consistent height */
+}
+
+/* --- Layout & Containers --- */
+
+/* Utility class for creating an inline-flex container. */
+.if{
+  display: inline-flex;
+}
+
+/* A container class to constrain content width and add padding. */
+.box {
+  max-width: 900px;
+  padding: 0 30px;
+}
+
+/* Styles a container, likely for settings, aligning its content to the right. */
+.limits-box{
+  text-align: right;
+  margin: 0 35px 0 0 ;
+  font-size: 15px;
+}
+
+/* --- Stats Display --- */
+
+/* Styles the container for the statistics section. */
+.stats{
+  margin: 10px auto 20px auto;
+}
+
+/* Styles the large numbers in the stats display (e.g., WPM). */
+.details{
+  font-size: 6rem;
+}
+
+/* Styles an individual block within the stats container. */
+.stat-block{
+  padding: 0 30px;
+  min-width: 250px;
+}
+
+/* Styles the label for a statistic (e.g., "WPM"). */
+.stat-name{
+  font-size: 1rem;
+  position: relative; /* Positioned relative to its normal position */
+  top: 45px;
+  right: 5px;
+}
+
+/* --- Responsive Design --- */
+
+/* Media query for screens 600px or narrower. */
+@media(max-width: 600px){
+  /* Reduces font size for stat details on small screens. */
+  .details{
+    font-size: 5rem;
+  }
+  /* Removes the minimum width for stat blocks on small screens. */
+  .stat-block{
+    min-width: 0;
+  }
+}
+
+/* --- Form Elements & Interactivity --- */
+
+/* Removes the default browser outline on focused form elements and links. */
+input:focus, textarea:focus, select:focus, a:focus{
+  outline: 0 ;
+}
+
+/* Styles for links when they are focused or hovered over. */
+a:focus,a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Styles the restart button. */
+.restart-button{
+  padding: 10px;
+}
+
+/* Styles the text input area. */
+textarea{
+  background: #1a1a1a;
+  border: 2px solid #00aaff;
+  border-radius: 10px;
+  color: #eeeeee;
+  padding: 10px;
+  font-size: 1.2rem;
+  resize: none; /* Prevents the user from resizing the textarea. */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* --- Footer --- */
+
+/* Styles the footer section. */
+footer{
+  padding: 20px;
+  font-size: 15px;
+}
